@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomLayout" customModule="Dealify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Y8-9J-oTT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-o7-Q4w">
+                            <rect key="frame" x="37.5" y="283.5" width="300" height="100"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-uR-2XI">
+                                    <rect key="frame" x="0.0" y="-200" width="300" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="g4A-YH-WMr"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DX-wM-cbO">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e70-Zy-1FH" customClass="CustomButton" customModule="Dealify" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="60" width="300" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Mgu-Os-ps2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                    <connections>
+                                        <action selector="reloadAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hj1-XY-j4w"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="qov-Et-OzH"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Wge-o7-Q4w" firstAttribute="centerX" secondItem="0Y8-9J-oTT" secondAttribute="centerX" id="cwN-Xs-7Oe"/>
+                        <constraint firstItem="Wge-o7-Q4w" firstAttribute="centerY" secondItem="0Y8-9J-oTT" secondAttribute="centerY" id="j8Q-MF-OKZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0Y8-9J-oTT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="30G-Zy-fSt"/>
+                <constraint firstItem="0Y8-9J-oTT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CVp-u8-9Y8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Y8-9J-oTT" secondAttribute="trailing" id="Lb6-UX-ZDg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0Y8-9J-oTT" secondAttribute="bottom" id="QeB-3H-xD3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="customBtn" destination="e70-Zy-1FH" id="ex6-dN-Ujy"/>
+                <outlet property="customText" destination="6DX-wM-cbO" id="sqR-PK-Ho6"/>
+                <outlet property="custom_image" destination="bC5-uR-2XI" id="GZA-0I-aGO"/>
+            </connections>
+            <point key="canvasLocation" x="34.399999999999999" y="52.623688155922046"/>
+        </view>
+    </objects>
+</document>

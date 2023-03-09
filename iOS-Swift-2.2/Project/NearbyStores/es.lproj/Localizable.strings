@@ -1,0 +1,203 @@
+/*
+  Localizable.strings
+  NearbyStores
+
+  Created by Amine on 6/3/18.
+  Copyright © 2018 Amine. All rights reserved.
+*/
+
+"Upcoming" = "Próximamente";
+"Sign In" = "Entrada";
+"Event Detail" = "Detalles";
+"Edit Profile" = "Editar Perfil";
+"Just Now" = "Justo Ahora";
+"less than 1KM" = "menos de 1km";
+"People around me" = "Gente a mi alrededor";
+"Nearby Events Notification" = "Notificaciones de Eventos Próximos";
+"Receive notification when there is a store near you" = "Recibir notificación cuando haya un comercio cerca mío.";
+"Enter email address" = "Escriba su Email";
+"Receive notification when there is a event coming" = "Recibir notificación cuando haya un evento próximo";
+"Don't have account?" = "¿No tienes cuenta?";
+"Pick Photo" = "Elige Foto";
+"Reload" = "Recargar";
+"Offers notification" = "Notificación de Oferta";
+"Categories" = "Categorías";
+"Version" = "Versión";
+"About us" = "Sobre Nosotros";
+"Messenger notifications" = "Notificaciones al Messenger";
+"Thank for your review!" = "¡Gracias por tu opinión!";
+"offers" = "ofertas";
+"Write Name, Address, City ..." = "Escribe nombre, dirección, ciudad...";
+"Send Message" = "Enviar Mensaje";
+"Reviews" = "Opiniones";
+"Show More Offers" = "Mostrar Más Ofertas";
+"Write Review..." = "Escribe Opinión...";
+"Enter password" = "Escribe Contraseña";
+"Search on" = "Buscar en";
+"stores" = "comercios";
+"Offer Detail" = "Detalles";
+"Enter message ..." = "Escribe mensaje ...";
+"Store detail" = "Detalle";
+"Close" = "Cerrar";
+"Events" = "Eventos";
+"No Feed Yet" = "No Feed Yet";
+"Coming event notification" = "Notificación de próximo evento";
+"Enter login" = "Escribe Entrada";
+"Chat login" = "Login / Crear cuenta";
+"Terms of use" = "Términos de Uso";
+"Application Version" = "Versión de la Aplicación";
+"Rate Now" = "Calificar Ahora";
+"Send" = "Enviar";
+"My Events" = "Mis Eventos";
+"Log out" = "Salida";
+"My Favourite Stores" = "Mis Comercios Favoritos";
+"Featured" = "Destacados";
+"Find people around you" = "Encuentra gente cercana";
+"Messenger" = "Messenger";
+"Forgot password?" = "¿Contraseña Olvidada?";
+"Enter message..." = "Escribe mensaje...";
+"Receive a special offer notification" = "Recibe una notificación especial de ofertas";
+"Receive notification when there is new messages" = "Recibe notificación cuando haya un nuevo mensaje";
+"Try a refresh the page" = "¡No encontramos nada!";
+"Store Detail" = "Detalles";
+"Geo Stores" = "Mapa de Comercios";
+"%d stores" = "%d comercios";
+"Pseudo" = "Usuario";
+"Add Review" = "Añadir Opinión";
+"Sent message" = "Enviar Mensaje";
+"My interesting events" = "Mis Eventos Interesantes";
+"Manage your business" = "Administra Tu Comercio";
+"Privacy Policy" = "Política de Privacidad";
+"Offers" = "Ofertas";
+"Nearby stores notifications" = "Notificaciones de Comercios Cercanos";
+"KM" = "km";
+"M" = "m";
+"Favourites" = "Favoritos";
+"Setting" = "Ajustes";
+"Loading..." = "Cargando...";
+"Couldn't load data from server" = "No pudimos cargar información desde el servidor";
+"Enter full name" = "Escribe nombre completo";
+"Search" = "Buscar";
+"OR" = "O";
+"Block" = "Bloquear";
+"inbox" = "Bandeja Entrada";
+"events" = "eventos";
+
+
+//ADDED BY DEV
+"_Search" = "Buscar";
+"Home" = "Inicio";
+"You have %@ messages" = "Tienes %@ mensajes";
+"Radius" = "Radio";
+"Save Changes" = "Guardar Opciones";
+"Sign Up" = "Registro";
+
+
+"Already Have an account?" = "¿Ya estás registrado?";
+
+"%@ - Only on %@ \n %@" = "%@ - Solo en %@ \n %@";
+
+
+
+//2.0
+"nearby_stores" = "Discover nearby Stores";
+"recent_stores" = "Recent Stores";
+"featured_stores" = "Featured Stores";
+"recent_offers" = "Recent Offers";
+"nearby_offers" = "Nearby Offers";
+"top_categories" = "Top Categories";
+"nearby_events" = "Nearby Events";
+"recent_events" = "Recent Events";
+"nearby_users" = "People around me";
+"sponsored_banners" = "Sponsored";
+"photos" = "Photos";
+
+
+
+
+"Result for %@ " = "%@";
+"tuesday" = "tuesday";
+"thursday" = "tuesday";
+"friday" = "tuesday";
+"Your profile was updated successful!" = "Your profile was updated successful!";
+"top_categories" = "top_categories";
+"Show all" = "Show all";
+"Geo" = "Geo";
+"Do you would receive notifications?" = "Do you would receive notifications?";
+"Location" = "Location";
+"End at" = "End at";
+"Notification" = "Notification";
+"Inbox" = "Inbox";
+"categories" = "categories";
+"Open" = "Open";
+"Open Now" = "Open Now";
+"home" = "home";
+"Miles" = "Miles";
+"Done" = "Done";
+"Promo" = "Promo";
+"event" = "event";
+"recent_offers" = "recent_offers";
+"Notifications" = "Notifications";
+"Select Category" = "Select Category";
+"Call" = "Call";
+"Login" = "Login";
+"Price" = "Price";
+"Remove notification" = "Remove notification";
+"nearby_stores" = "nearby_stores";
+"Closed" = "Closed";
+"Search for restaurants, offers..." = "Search for restaurants, offers...";
+"All categories" = "All categories";
+"+5 KM" = "+5 KM";
+"Change Password" = "Change Password";
+"Discount" = "Discount";
+"account" = "account";
+"Write something..." = "Write something...";
+"Show All " = "Show All ";
+"$$" = "$$";
+"www" = "www";
+"Remove from bookmarks" = "Remove from bookmarks";
+"$$$$" = "$$$$";
+"$$$" = "$$$";
+"Confirm" = "Confirm";
+"Joined" = "Joined";
+"store" = "store";
+"sponsored_banners" = "sponsored_banners";
+"Notify me" = "Notify me";
+"Current Location" = "Current Location";
+"monday" = "monday";
+"Favorites" = "Favorites";
+"Date Begin" = "Date Begin";
+"Photo(s)" = "Photo(s)";
+"Category" = "Category";
+"Opening time" = "Opening time";
+"Far" = "Far";
+"$" = "$";
+"All" = "All";
+"Create An Account" = "Create An Account";
+"Write something ..." = "Write something ...";
+"75-100%" = "75-100%";
+"New password" = "New password";
+"25-50%" = "25-50%";
+"favorites" = "favorites";
+"saturday" = "saturday";
+"Recent" = "Recent";
+"Have an account?" = "Have an account?";
+"No, Thanks" = "No, Thanks";
+"50-75%" = "50-75%";
+"By clicking on on Notify me, you will receive notifications from this business" = "By clicking on on Notify me, you will receive notifications from this business";
+"sunday" = "sunday";
+"Finish" = "Finish";
+"Enter old password" = "Enter old password";
+"more" = "more";
+"Create Account" = "Create Account";
+"Change Location" = "Change Location";
+"wednesday" = "wednesday";
+"Join" = "Join";
+"0-25%" = "0-25%";
+"Offer detail" = "Offer detail";
+"Do you would change your location" = "Do you would change your location";
+"nearby_events" = "nearby_events";
+"nearby_users" = "nearby_users";
+"Chanege location" = "Chanege location";
+"photos" = "photos";
+"Open only" = "Open only";

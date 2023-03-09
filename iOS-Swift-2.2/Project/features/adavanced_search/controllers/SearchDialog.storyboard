@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H45-UA-a4b">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Dialog View Controller-->
+        <scene sceneID="X2D-TT-hBP">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="H45-UA-a4b" customClass="SearchDialogViewController" customModule="NearbyStores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1JF-bq-aJf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFq-YQ-Fi5">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bD-8j-IXM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="89x-uI-TN5">
+                                                <rect key="frame" x="0.0" y="30" width="375" height="90"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fx-ri-ab6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="MNE-aP-XI4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02J-lJ-KS1">
+                                                        <rect key="frame" x="0.0" y="45" width="375" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="vbW-2b-fO8"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Current Location"/>
+                                                        <connections>
+                                                            <action selector="current_location_action:" destination="H45-UA-a4b" eventType="touchUpInside" id="hGH-Cx-t5J"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWh-zM-wz7">
+                                                        <rect key="frame" x="0.0" y="55" width="375" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="s4f-Cq-omB"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3W-TS-HBD">
+                                                <rect key="frame" x="0.0" y="125" width="375" height="1075"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="O3W-TS-HBD" firstAttribute="top" secondItem="89x-uI-TN5" secondAttribute="bottom" constant="5" id="0ED-v0-Sa1"/>
+                                            <constraint firstAttribute="trailing" secondItem="O3W-TS-HBD" secondAttribute="trailing" id="4FS-yT-eQf"/>
+                                            <constraint firstItem="O3W-TS-HBD" firstAttribute="leading" secondItem="0bD-8j-IXM" secondAttribute="leading" id="4sS-8G-bg0"/>
+                                            <constraint firstAttribute="trailing" secondItem="89x-uI-TN5" secondAttribute="trailing" id="Ea5-pv-Cuo"/>
+                                            <constraint firstItem="89x-uI-TN5" firstAttribute="leading" secondItem="0bD-8j-IXM" secondAttribute="leading" id="FNV-UC-E7S"/>
+                                            <constraint firstAttribute="height" constant="1200" id="c6r-ZZ-re0"/>
+                                            <constraint firstAttribute="bottom" secondItem="O3W-TS-HBD" secondAttribute="bottom" id="dbk-a9-BiS"/>
+                                            <constraint firstItem="89x-uI-TN5" firstAttribute="top" secondItem="0bD-8j-IXM" secondAttribute="top" constant="30" id="yol-7f-6i8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0bD-8j-IXM" firstAttribute="leading" secondItem="4Hg-BQ-afN" secondAttribute="leading" id="8HX-IQ-wM9"/>
+                                    <constraint firstAttribute="bottom" secondItem="0bD-8j-IXM" secondAttribute="bottom" constant="-500" id="ZGk-3Z-Tte"/>
+                                    <constraint firstAttribute="trailing" secondItem="0bD-8j-IXM" secondAttribute="trailing" id="c25-Ne-g4G"/>
+                                    <constraint firstItem="0bD-8j-IXM" firstAttribute="top" secondItem="aUy-lT-dBp" secondAttribute="top" id="g5i-UU-BOE"/>
+                                    <constraint firstItem="0bD-8j-IXM" firstAttribute="centerX" secondItem="yFq-YQ-Fi5" secondAttribute="centerX" id="xFl-rW-Gdi"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="aUy-lT-dBp"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="4Hg-BQ-afN"/>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGz-pU-FFW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="296-Hh-YYY"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-4f-AJF" customClass="CustomButton" customModule="NearbyStores">
+                                <rect key="frame" x="2" y="625" width="371" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G8X-8a-maO"/>
+                                </constraints>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="H45-UA-a4b" eventType="touchUpInside" id="r3n-Uc-BPI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="SnA-fp-OGC" firstAttribute="trailing" secondItem="2XQ-4f-AJF" secondAttribute="trailing" constant="2" id="2uF-fa-7aM"/>
+                            <constraint firstItem="yFq-YQ-Fi5" firstAttribute="top" secondItem="tGz-pU-FFW" secondAttribute="bottom" symbolic="YES" id="3F0-yr-jIh"/>
+                            <constraint firstItem="tGz-pU-FFW" firstAttribute="leading" secondItem="yFq-YQ-Fi5" secondAttribute="leading" id="4Ir-r9-4vU"/>
+                            <constraint firstItem="yFq-YQ-Fi5" firstAttribute="top" secondItem="tGz-pU-FFW" secondAttribute="bottom" id="Ead-YL-2Kd"/>
+                            <constraint firstItem="tGz-pU-FFW" firstAttribute="top" secondItem="SnA-fp-OGC" secondAttribute="top" id="M9p-IT-pwa"/>
+                            <constraint firstItem="yFq-YQ-Fi5" firstAttribute="trailing" secondItem="SnA-fp-OGC" secondAttribute="trailing" id="YCZ-xh-0fg"/>
+                            <constraint firstItem="yFq-YQ-Fi5" firstAttribute="leading" secondItem="SnA-fp-OGC" secondAttribute="leading" id="bnN-2W-2Gb"/>
+                            <constraint firstItem="SnA-fp-OGC" firstAttribute="bottom" secondItem="2XQ-4f-AJF" secondAttribute="bottom" constant="2" id="e56-Em-bXz"/>
+                            <constraint firstItem="2XQ-4f-AJF" firstAttribute="leading" secondItem="SnA-fp-OGC" secondAttribute="leading" constant="2" id="qcM-8m-8Tf"/>
+                            <constraint firstItem="tGz-pU-FFW" firstAttribute="trailing" secondItem="yFq-YQ-Fi5" secondAttribute="trailing" id="x7q-uH-7hx"/>
+                            <constraint firstItem="yFq-YQ-Fi5" firstAttribute="bottom" secondItem="SnA-fp-OGC" secondAttribute="bottom" id="zSg-go-mLh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SnA-fp-OGC"/>
+                    </view>
+                    <connections>
+                        <outlet property="NavigationBarItem" destination="296-Hh-YYY" id="Kz6-u9-ymK"/>
+                        <outlet property="current_location_button" destination="02J-lJ-KS1" id="oU9-0T-pjQ"/>
+                        <outlet property="mainView" destination="1JF-bq-aJf" id="IeY-JX-oHU"/>
+                        <outlet property="navigationBar" destination="tGz-pU-FFW" id="Zb3-H3-pOo"/>
+                        <outlet property="radioBoxFilterTypeContainer" destination="lWh-zM-wz7" id="DpI-gm-S3c"/>
+                        <outlet property="radioBoxSortTypeContainer" destination="1fx-ri-ab6" id="r6z-Ls-1Rb"/>
+                        <outlet property="radioBoxesHeaderStackView" destination="89x-uI-TN5" id="q4c-LP-3Cv"/>
+                        <outlet property="scroll_view" destination="yFq-YQ-Fi5" id="1z9-YI-hts"/>
+                        <outlet property="searchViewBtn" destination="2XQ-4f-AJF" id="kcO-U0-MI9"/>
+                        <outlet property="search_button" destination="2XQ-4f-AJF" id="Gh5-AH-NVD"/>
+                        <outlet property="viewContainer" destination="O3W-TS-HBD" id="XKX-YE-qdn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wlq-6x-mVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="66.11694152923539"/>
+        </scene>
+    </scenes>
+</document>

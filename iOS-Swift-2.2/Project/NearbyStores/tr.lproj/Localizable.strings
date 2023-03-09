@@ -1,0 +1,111 @@
+/* 
+  Localizable.strings for turkish language
+  NearbyStores
+
+  Created by Amine on 6/3/18.
+  Copyright © 2018 Amine. All rights reserved.
+*/
+
+"Upcoming" = "Yaklaşan";
+"Sign In" = "Oturum Aç";
+"Event Detail" = "Detay";
+"Edit Profile" = "Profili Düzenle";
+"Just Now" = "Hemen Şimdi";
+"less than 1KM" = "1KM'den az";
+"People around me" = "Çevremdeki insanlar";
+"Nearby Events Notification" = "Yakınımdaki Etkinlikler Bildirimi";
+"Receive notification when there is a store near you" = "Size yakın bir işletme olursa bildirim alın";
+"Receive notification when there is a event near you" = "Size yakın bir etkinlik olursa bildirim alın";
+"Enter email address" = "E-posta adresiniz";
+"Receive notification when there is a event coming" = "Bir etkinlik olduğunda bildirim al";
+"Don't have account?" = "Hesabınız yok mu?";
+"Pick Photo" = "Fotoğraf Ekle";
+"Reload" = "Yeniden Yükle";
+"Offers notification" = "İndirim bildirimi";
+"Categories" = "Kategoriler";
+"Version" = "Versiyon";
+"About us" = "İşletmemi Nasıl Eklerim?";
+"Messenger notifications" = "Mesajlaşma bildirimleri";
+"Thank for your review!" = "Yorumunuz için teşekkürler!";
+"offers" = "İndirimler";
+"offerss" = "İndirimi Var";
+"Write Name, Address, City ..." = "İsim Yaz, Adres, Şehir ...";
+"Send Message" = "Mesaj Gönder";
+"Reviews" = "Yorumlar";
+"Show More Offers" = "Diğer İndirimleri Göster";
+"Write Review..." = "Yorum Yaz ...";
+"Enter password" = "Şifreniz";
+"Search on" = "Ara";
+"stores" = "işletmeler";
+"Offer Detail" = "Detay";
+"Enter message ..." = "Mesaj yaz...";
+"Store detail" = "Detay";
+"Close" = "Kapat";
+"Events" = "Etkinlikler";
+"No Feed Yet" = "No Feed Yet";
+"Coming event notification" = "Yaklaşan Etkinlik bildirimi";
+"Enter login" = "Kullanıcı Adınız";
+"Chat login" = "Giriş / Hesap Oluştur";
+"Terms of use" = "Kullanım şartları";
+"Application Version" = "Uygulama Versiyonu";
+"Rate Now" = "Şimdi Oy Ver";
+"Send" = "Gönder";
+"My Events" = "Katılacağım Etkinlikler";
+"Log out" = "Çıkış";
+"My Favourite Stores" = "Favori İşletmelerim";
+"Featured" = "Öne Çıkan";
+"Find people around you" = "Etrafınızdaki insanları bul";
+"Messenger" = "Messenger";
+"Forgot password?" = "Şifrenizi mi Unuttunuz?";
+"Enter message..." = "Mesaj Yaz...";
+"Receive a special offer notification" = "Size özel indirimler için bildirim alın";
+"Receive notification when there is new messages" = "Size yeni bir mesaj geldiğinde bildirim alın";
+"Try a refresh the page" = "Sonuç Bulunamadı!";
+"Store Detail" = "Detay";
+"Geo Stores" = "Haritada İşletmeler";
+"Geo Store" = "Haritada İşletmeler";
+"%d stores" = "%d işletme";
+"Pseudo" = "Kullanıcı Adı";
+"Add Review" = "Yorum Ekle";
+"Sent message" = "Gönderilen mesaj";
+"My interesting events" = "Katılacağım etkinlikler";
+"Manage your business" = "İşletmenizi yönetin";
+"Privacy Policy" = "Gizlilik Politikası";
+"Offers" = "İndirimler";
+"Nearby stores notifications" = "Yakınımdaki işletme bildirimleri";
+"KM" = "Km";
+"M" = "m";
+"Favourites" = "Favorim İşletmeler";
+"Setting" = "Ayarlar";
+"Loading..." = "Yükleniyor...";
+"Couldn't load data from server" = "Veriler sunucudan yüklenemedi";
+"Enter full name" = "Ad-Soyad";
+"Search" = "Ara";
+"OR" = "VeYa";
+"Block" = "Engelle";
+"inbox" = "Gelen Kutusu";
+"You have %@ messages" = "Yeni %@ mesajın var";
+"events" = "etkinlikler";
+
+//ADDED BY DEV
+"_Search" = "Ara";
+"Home" = "İşletmeler";
+"Radius" = "Yarıçap";
+"Save Changes" = "Değişiklikleri Kaydet";
+"Sign Up" = "Kaydol";
+"Participate" = "Katılacağım";
+"Cancel" = "İptal";
+"Upcoming Event soon" = "Yakında Gerçekleşecek etkinlik";
+"Upcoming Event" = "Yaklaşan Etkinlik";
+"SignUp" = "Kaydol";
+"GeoStore" = "Haritada İşletmeler";
+"New Message" = "Yeni mesajınız var";
+"Login field is empty" = "Kullanıcı adı yazılmadı";
+"Success!" = "Harika!";
+"This app is not allowed to query for scheme tel" = "Uygulama bu telefon formatına izin vermiyor";
+"Find neighbour" = "Arkadaş bul";
+"No discussion found!" = "Sohbet Bulunamadı!";
+
+"Already Have an account?" = "Already Have an account?";
+
+"%@ - Only on %@ \n %@" = "%@ - Only on %@ \n %@";

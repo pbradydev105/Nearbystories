@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Nearbystores v2.0.0 Documentation </title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="container">
+
+            <section id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <h1>&ldquo;NearbyStores - Offers, Events & Chat Realtime&rdquo;</h1>
+                            <p class="lead">&ldquo;Nearbystores&rdquo; Documentation by &ldquo;Droidev-Technology&rdquo; v2.0.0
+                            </p>
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li><a href="#line1">Dashboard Quick Install</a></li>
+                            <li><a href="#line2">How to change Landing Page</a></li>
+                            <li><a href="#line3">How to enable maps </a></li>
+                            <li><a href="#line4">How to manage campaigns via cronjob</a></li>
+                            <li><a href="#line5">How to enable payments gateway</a></li>
+                            <li><a href="#line6" class="hidden">Setup Subscription Module</a></li>
+
+                            <li><a href="#line_ios_1">Install Xcode on OSX</a> </li>
+                            <li><a href="#line_ios_2">Create a firebase project for IOS</a></li>
+                            <li><a href="#line_ios_3">Importing IOS project</a></li>
+                            <li><a href="#line_ios_4">Changing app package</a></li>
+                            <li><a href="#line_ios_5">Enable Push notification</a></li>
+                            <li><a href="#line_ios_6">Integrate a new Languages to the app </a></li>
+
+                            <li><a href="#line10">Version History (Changelog)</a></li>
+                            <li><a href="#line11">Thank you & Support</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <section class="welcome">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Introduction
+                                    <hr>
+                                </h2>
+                                <div class="row">
+
+                                    <div class="col-md-12 full">
+                                        <div class="intro1">
+                                            <ul>
+                                                <li><strong>Created : </strong>19/09/2020</li>
+                                                <li><strong>App Version : </strong> v 2.0</li>
+                                                <li><strong>Author : </strong> Droidev-Technology - <a href="mailto:droideve.tech@gmail.com">droideve.tech@gmail.com</a>
+                                                </li>
+                                                <li><strong>Support Platform : </strong> <a href="https://droidevtech.ticksy.com/" target="_blank">https://droidevtech.ticksy.com/</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <hr>
+                                        <div>
+                                            <p>First of all, Thank you so much for purchasing this template and for being my loyal customer.
+                                                <strong>You are awesome!</strong>
+                                                <br> The pages are accompanied by a video tutorial, it is recommended to check both the video and the written documentation..
+                                            </p>
+
+                                            <p>
+                                                <b>NEARBYSTORES</b> is an innovative local business search app with an intelligent search functionality that can help you find different businesses in an area easily. It has a powerful store locator admin
+                                                that allows you to manage stores, categories, notification, business owners, events and offers
+
+                                            </p>
+
+
+
+                                            <h4>Requirements</h4>
+                                            <p>
+                                                Installing Nearby Stores PHP dashboard is an easy process , we will guide you through it .
+                                                <br> Before getting started, please make sure your web server meets all the requirements:
+                                            </p>
+
+                                            <ol>
+                                                <li> PHP Version 5.6+ </li>
+                                                <li> cURL Extension (enabled on most hosts by default)</li>
+                                                <li> MySQL extension (enabled on most hosts by default)</li>
+                                                <li> Mod_rewrite enabled </li>
+                                            </ol>
+
+
+                                            <br>
+
+                                            <div class="intro2 clearfix">
+                                                <p><i class="fa fa-exclamation-triangle"></i>Note : Sometimes you may get some alert messages : Couldn't validate your license key! or something like that in the top of the page , please check the report bugs
+                                                    generated inside your host Repository /application/logs , sometimes if you have a different configuration on your server you may recieve some errors ,if so please send us the report bug via our support
+                                                    platform : https://droidevtech.ticksy.com/
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="line1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Dashboard Quick Install<a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/OyglB6fHZe8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <br>
+                                <br>
+                                <legend>
+                                    <strong>Step 1 </strong> Deploying the PHP script on a Cpanel</legend>
+
+                                <ol>
+                                    <li>Zip your project , upload it to <b>public_html</b> and Extract it</li>
+                                    <li>Enter your host address in the URL to check the access to the web dashboard
+                                    </li>
+                                    <li>If you receive an exception message , go to your PHP selector and check the box that is missing ( like the previous video ) </li>
+
+                                </ol>
+
+                                <legend>
+                                    <strong>Step 2 </strong> Quick install & Database</legend>
+                                <ol>
+                                    <li>Go to the installation page [Your URL Host ]/install </li>
+                                    <li>Create a new database in mysql databases ( in cPanel ) </li>
+                                    <li>You can get the purchase code from this link
+                                        <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-">https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-</a>
+                                    </li>
+                                    <li>Complete the form with the necessary informations and hit finish installation button </li>
+                                </ol>
+
+
+
+                                <legend>
+                                    <strong>Step 3 </strong> Final dashboard config</legend>
+                                <ol>
+                                    <li>Congratulations, you have completed the installation of web dashboard. you only have some minor changes to do in your dashboard</li>
+                                    <li>You have to rename delete or the install folder inside your host directory to avoid any bugs when runing the script </li>
+                                    <li>Go to the application section in the lest side bar then upload your logo and set new app name ( Note: this name will be visible only on your dashboard and on delivred email) </li>
+                                    <li>Update Firebase , google maps API key ( Note : if you do not have the key yet, take a look at the menu
+                                        <a href="#apis">Settings up API Keys</a> ) </li>
+                                    <li> <strong>Important : </strong> privacy_policy.html and term_of_uses.html should be completed, you will be asked to mention them when uploading the app from the Play Store </li>
+
+                                </ol>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">How to change Landing Page <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+
+                        <ul>
+                            <li> Using our template : </li>
+                            <ol>
+                                <li> Go to PHP Script > views > frontend > apex_app_template</li>
+                                <li> <b>"home.php"</b> , <b>"incluse/header.php"</b>, <b>"include/footer.php"</b> To change Text,Messages ... </li>
+                                <li> <b>"[PHP PATH] / views / skin / frontend / apex_app_template / screenshot"</b> to change screenshots </li>
+                            </ol>
+                            <li>Link the dashboard to another presentation website</li>
+                            <ol>
+                                <li>First you need to disable the template provided by default , to do that please go to the sidebar Application > Global Configuration > And set the field <strong>Enable default
+                                        front-end</strong> to false
+                                </li>
+                                <li>Finally you have to link your template with the dashboard by coping the URL of the dashboard inside a button or link for click redirection </li>
+                            </ol>
+                        </ul>
+
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line3" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">How to enable maps for dashboard <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/1LLnP_BoiRE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p>
+                            <ol>
+                                <li>Go to the <a href="https://console.developers.google.com/">Google developer console</a> , in the menu choose APIs & Services > Credentials > Create Credentials > API Key </li>
+                                <li>Copy the key, then return to the application restrictions and select HTTP referrers
+                                </li>
+                                <li>Go to the section <b>Accept Request from these HTTP referrers </b> and enter your domain url ending with <i> /* </i> to accept all requests from your domain</li>
+                                <li>The final step is to enable the api : <b> Maps SDK for Android ,Places API ,Directions
+                                    API ,
+                                    Geocoding API , Maps JavaScript API </b> </li>
+                                <li>Congratulation, you have finished the configuration of google maps ,Now get back to your dashboard configuration and paste the key then click save button </li>
+                            </ol>
+                        </p>
+
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-exclamation-triangle"></i> Google has recently changed its policy, so to enable Google Api in your app you should create a billing account , check this URL <a href="https://cloud.google.com/billing/docs/how-to/manage-billing-account">(
+                                    https://cloud.google.com/billing/docs/how-to/manage-billing-account)</a>
+                        </div>
+
+                        <br> <br>
+
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-exclamation-triangle"></i> Google maps not showing after uploading the app to playstore ? <br> Please feel free to check this URL : https://stackoverflow.com/questions/46191073/google-maps-not-showing-after-uploading-the-app-to-playstore
+                        </div>
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">How to manage campaigns via cronjob <a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <p><b>Cron</b> is most suitable for scheduling repetitive tasks. Scheduling one-time tasks is often more easily accomplished using the associated at utility.</p>
+                            <iframe width="854" height="480" src="https://www.youtube.com/embed/EW5KRkeFBvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br>
+                            <br>
+                            <ol>
+                                <li> Go to dashboard sidebar menu > campaigns > campaign config</li>
+                                <li> Set the <b> Max Pushes Allowed Per Campaign </b> & <b>Targeting radius (</b> and
+                                    <b> Pushes allowed per
+                                        campaign with crontab for each segment </b></li>
+                                <li> Go to cpanel > cronJob , copy and paste the cronjob.php path from your dashboard in the command field
+                                </li>
+                                <li> Fill in the necessary informations to start the cron job then hit the button add new cron job</li>
+                            </ol>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">How to enable payments gateway <a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p> Please follow this video tutorial in order to enable payment in your dashboard app .
+                                </p>
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/3HUkDJLjCDE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <br> <br> <br>
+                                <p>To enable the subscription module in your project you need first to configure the payment gateway such as stripe , paypal and D.Wallet</p>
+                                <ul>
+                                    <li> <b>Paypal Setup :</b>
+                                        <ol>
+                                            <li>First thing open the following link : <a href="developer.paypal.com/developer.accounts">developer.paypal.com/developer.accounts/</a></li>
+                                            <li>Login to the system and go to My apps & Credentials menu </li>
+                                            <li>Click on the "live" button and add the app name </li>
+                                            <li>New <b>Client ID</b> will be generated for your project , copy this ID and return to dealify app Payment > Config Payment > check paypal payment method click save and then past the client ID</li>
+                                            <li>You must now perform the same operation for the <b>secret ID</b>, once completed, click on the "Save" button. </li>
+                                            <li>Congratulations, you have completed the configuration, close the brownser tab.</li>
+                                            <li>Set test mode to false when you decided to switch to production </li>
+                                        </ol>
+                                    </li> <br>
+                                    <li> <b>Stripe Setup :</b>
+                                        <ol>
+                                            <li>Open app dashboard under menu Payment > Config Payment > check stripe payment method click save</li>
+                                            <li>Open
+                                                <a href="dashboard.stripe.com"></a> , create a new project </li>
+                                            <li>Copy both <b>publishable key</b> and <b>Secret key</b> , paste them into your project under menu Payment > Config Payment > stripe form </li>
+                                            <li>Return to the stripe dashboard , Home page under section Activate your stripe account Click Start Now</li>
+                                            <li>Once completed, click on the "Save" button. </li>
+                                            <li>Congratulations, you have completed the configuration, close the brownser tab.</li>
+                                            <li>Set test mode to false when you decided to switch to production </li>
+                                        </ol>
+                                    </li> <br>
+                                    <li>
+                                        <b>Check myWallet option if you want to allow recurring payment using Digital
+                                            wallet .</b>
+                                    </li>
+                                </ul>
+
+
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-exclamation-triangle"></i>Note : Digital wallets let you accept recurring payments , you can have funds automatically added from your card to the wallet if there are insufficient funds to pay for subscription
+                                        renewals . </p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line6" class="section hidden">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Setup Subscription Module <a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p> This video tutorial explain how to setup the subscription plugin in your existing project </p>
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/Qu3QnbJt2Fk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <br> <br> <br>
+                                <p> <b>Note :</b> In our case, we use Cpanel , Folder manager to upload the subscription module within the project, but you can use SSH , FTP or any other tool provided by your host server to upload module.</p>
+                                <ol>
+                                    <li>In your server open your project repository , go to /application/modules </li>
+                                    <li>Upload the zip file provided by envato after purchase, then extract it inside the same folder </li>
+                                    <li>Now you have to delete the payment module , this module replace it with the new one attached with the subscription plugin, don't worry your payment configuration will not be deleted, your data is stored in the database
+                                        ;) </li>
+                                    <li> <b>Important</b> After extracting the zip file a new folder will be showed in the list of modules , it's not what we want to keep right now so we need to open the folder and move folders <b>Pack , Payment</b> to modules
+                                        folder </li>
+                                    <li>Very good, now you have to open your app dashboard , under menu Application > Module Manager , scroll down to the new modules </li>
+                                    <li>Click install button , copy the purchase code received from envato in the popup input field and click save </li>
+                                    <li>You must now perform the same operation for the second module , sometimes the system will recognize that the second module "payment" need to be upgraded , no problem click upgrade and wait until page reloading </li>
+                                    <li>Congratulations, your plugin has been successfully installed, you can see the new module in the left menu </li>
+                                    <li>Before creating new packs . please configure the default currency first to avoid any issue in the future use </li>
+                                </ol>
+
+
+                            </div>
+
+
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line_ios_1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Install Xcode on OSX<a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <b>Requirement:</b>
+                                <ul>
+                                    <li>XCode 11</li>
+                                    <li>Swift 5.0</li>
+                                </ul>
+                                <p>
+                                    In order to start configuring , you need to install XCode on your Mac OS
+                                </p>
+
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/N1eY6q0SXcA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br>
+
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line_ios_2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Importing IOS Project<a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/0YqD9Fv4bcs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <br>
+                                <ol>
+                                    <li>First make sure that you have installed the last version of Xcode </li>
+                                    <li>Unzip your project , then go to IOS folder > APP and click on Dealify.xc workspace to launch your project inside the xcode </li>
+                                    <li>Xcode should be launched now , go to your root folder (Dealify) you can update your app name , bundle identifier , app version </li>
+                                    <li>To be able to upload your app on the app store you should have an apple Id to sign the app , you need to create a new one . Once done you can complet the configuration on your app</li>
+                                    <li>Open your app config file from this path <strong>[Project/config/AppConfig.swift]</strong> , this file is required for your app so please make sure you fill all fields correctly to avoid any crash or malfunction of
+                                        your application during the test </li>
+                                    <li>Follow the steps in the previous video to complet the confi of your app </li>
+                                    <li>If everything went well , you can run the app after selecting the device </li>
+                                    <li>The app should start correctly , if not you need to check the <strong>base url , api url and ios_api</strong> variables , check also the accessibility of your app through URL </li>
+                                    <li>Congratulations the app ready now , enable your network and your gps then start navigating in your awesome app </li>
+                                </ol>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line_ios_3" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Create a firebase project for IOS<a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/tczFF3ktxqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                <br>
+                                <ol>
+                                    <li>Go to your firebase console ( https://firebase.google.com/ ) and create a new project for your IOS app</li>
+                                    <li>The platform asks you the IOS bundle ID of your application, go back to your xcode and copy and paste it in the requested field then enter a name of your app</li>
+                                    <li>Now you can download googleservice-info.plist file and place it in your ios project folder , open this file and make sure that the bundle id is the same as in your app</li>
+                                    <li>Run your app to verify the installation in your firebase console </li>
+                                </ol>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line_ios_4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Settings up google maps API Key<a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p> It is recommended to follow the tutorial provided by google to activate the api google maps on your app . <br> click on the following <a href="https://developers.google.com/maps/documentation/ios-sdk/start"> link</a>
+                                </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line_ios_5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Enable Push notification ( release mode )<a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/2Efc9c5LQow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                <p>
+                                    <ol>
+                                        <li> Open your browser in ( developer.apple.com ) , and click on the right menu Certificates,IDs & profiles</li>
+                                        <li> Create a new App ID = bundle ID </li>
+                                        <li>In the production section , select Apple push notification service SSL and click continue button and select CertificateSigningRequest ( follow the steps in the video below to generate this file) </li>
+                                        <li>Download your app certificate file <strong>api.cer</strong> </li>
+                                        <li>Export your certificated file , enter a new password for that file </li>
+                                        <li>Return to your firebase console , and click on the setting menu > cloud messaging > APNs Certificate , now upload your certificate file </li>
+                                        <li>Save this changes and go back to your apple developer console , click on menu APP IDs and make sure that the push notification is checked enable in both Development and production mode</li>
+                                    </ol>
+                                </p>
+
+                                <br>
+                                <iframe width="854" height="480" src="https://www.youtube.com/embed/SnRziTEK-M8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <br>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line_ios_6" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Integrate a new Languages to the app<a href="#top">#back to
+                                        top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    <iframe width="854" height="480" src="https://www.youtube.com/embed/u0LtM9Wstc8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    <p>
+                                        <ol>
+                                            <li>Open your root folder , in Localization section create a new Language</li>
+                                            <li>Open new language folder and update the value of each field with the translated word in the second column </li>
+                                            <li>Make sure to not update the first column</li>
+                                            <li>Once done you can save your file </li>
+                                        </ol>
+                                    </p>
+                                    <br>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+
+
+                    <section id="line10" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Version History (Changelog) <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>You can find the version history (changelog.txt) file on the root folder .</p>
+                                <hr>
+
+                                <h4>Changelog</h4>
+
+                                <pre class="brush: html">
+
+                                        -----------------------------------------------------------------------------------------
+                                        Version V2.0.0  - 12/09/2020
+                                        -----------------------------------------------------------------------------------------
+
+                                        New Features: 
+                                        - Dark moode integrated (automatically detected when device is switched to dark mode)
+                                        - Add open and close tag in each store
+                                        - Business Manager For mobile devices 
+                                        - Subscription Module with payment gateway for business owners 
+                                        - New Sliders with externel redirection
+                                        - Switch to another city or location  
+
+                                        Improvement:
+                                        - Better user experience with UI Improvement
+                                        - Recieve Notification from favorite stores and event only .
+                                        - Enhence Search filter 
+                                        - Offline mode is improved
+                                        - Offers listing in geo maps , include custom filter in maps
+                                        - Improve Cache in Search Filter 
+                                        
+
+                                        Bugs Fixed:
+                                        - Fixing bug with offers tags in store listing
+                                        - Fixing technical issue reported from Crashlytics
+                                        - Fixing Notification issues  
+
+
+                                        -----------------------------------------------------------------------------------------
+                                        Version V1.8.0 – 28/02/2020
+                                        -----------------------------------------------------------------------------------------
+                                        
+                                        New features:
+                                        - Notifications List layout 
+                                        - Privacy policy & terms of uses  popup validation .
+                                        - Multi language switching
+                                        - Module manager integration
+                                        - Edit language from dashboard
+                                    
+                                        Improvements:
+                                        - UI Improvement 
+                                        - migration to swift 5 for iOS 
+                                        - Source code Cleanup and refactoring 
+                                        - Reviews improvements 
+                                        - PHP version update , compatibility to the latest php version 
+                                        - Campaigns Improvement 
+                                        - Improving push notification 
+                                        - Geo business map improvement 
+                                    
+                                        Bugs fixed: 
+                                        - Forget password bug fixed
+                                        - Timezone bug fixed
+                                        - Real-time chat bug fixed
+                                        - Technical bugs reported to Crashlytics for the previous version 
+                                        - Deep-link bug fixed
+                                       
+
+                                      </pre>
+
+
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+
+                    <section id="line11" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Thank you & Support <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>
+                                    I'd like to thank you again for your purchase and I hope you where able to successfully install the app and using it in your future business . If you need support or have some questions. You can visit our support resources here at
+                                    <a target="_blank" href="https://support.droideve.com/">SUPPORT</a>.
+                                </p>
+                                <strong>What support does include</strong>
+                                <ol>
+                                    <li>Answers to (technical) questions about the item's features</li>
+                                    <li>Assistance with reported bugs and issues</li>
+                                    <li>Answers to questions about importing and setting up the item as is described in the docs.</li>
+                                </ol>
+                                <strong>Please note that support does not include:</strong>
+                                <ol>
+                                    <li>Customization & adding new features</li>
+                                    <li>Installation Services</li>
+                                    <li>Support for 3rd party software and/or plugins</li>
+                                    <li>Content related rejections and violations from Google</li>
+
+                                </ol>
+                                <p>
+                                    We do provide these extra services as freelance work. Contact as at (droideve.tech@gmail.com)
+                                </p>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+</html>

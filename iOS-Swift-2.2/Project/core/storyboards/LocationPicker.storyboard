@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kx-dY-BBr">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Picker View Controller-->
+        <scene sceneID="bjm-z8-I0G">
+            <objects>
+                <viewController storyboardIdentifier="city_autocomplete_vc" id="3Kx-dY-BBr" customClass="LocationPickerViewController" customModule="NearbyStores_PRO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dwa-i0-F0X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-ia-muE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-24-rm3">
+                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="1oo-p7-H4u" style="IBUITableViewCellStyleDefault" id="GaD-XV-2jA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GaD-XV-2jA" id="BSm-tw-QLL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1oo-p7-H4u">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SHh-ia-muE" firstAttribute="leading" secondItem="wcP-pJ-Y1O" secondAttribute="leading" id="2Ed-G3-SKI"/>
+                            <constraint firstItem="hR7-24-rm3" firstAttribute="top" secondItem="SHh-ia-muE" secondAttribute="bottom" id="8ZW-lH-iiQ"/>
+                            <constraint firstItem="SHh-ia-muE" firstAttribute="top" secondItem="wcP-pJ-Y1O" secondAttribute="top" id="B3v-q0-Gfs"/>
+                            <constraint firstItem="wcP-pJ-Y1O" firstAttribute="trailing" secondItem="hR7-24-rm3" secondAttribute="trailing" id="MlC-01-ovw"/>
+                            <constraint firstItem="wcP-pJ-Y1O" firstAttribute="bottom" secondItem="hR7-24-rm3" secondAttribute="bottom" id="f9a-wb-94e"/>
+                            <constraint firstItem="wcP-pJ-Y1O" firstAttribute="trailing" secondItem="SHh-ia-muE" secondAttribute="trailing" id="hU4-29-OYe"/>
+                            <constraint firstItem="hR7-24-rm3" firstAttribute="leading" secondItem="wcP-pJ-Y1O" secondAttribute="leading" id="hYq-yn-RDG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wcP-pJ-Y1O"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="SHh-ia-muE" id="j8t-H7-o7Q"/>
+                        <outlet property="table_view" destination="hR7-24-rm3" id="TAp-lF-BSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vd9-Gg-zLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="-72.413793103448285"/>
+        </scene>
+    </scenes>
+</document>

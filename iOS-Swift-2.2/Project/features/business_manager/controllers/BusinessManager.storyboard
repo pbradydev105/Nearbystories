@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hb4-k0-Vd7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Business Manager Viewc Controller-->
+        <scene sceneID="mQI-NT-p5X">
+            <objects>
+                <viewController storyboardIdentifier="busniss_manager_vc" id="Hb4-k0-Vd7" customClass="BusinessManagerViewcController" customModule="NearbyStores_PRO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gpR-Kd-lv6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAk-hm-LpQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGy-Nq-2kZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drt-Vl-4cJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="vdh-9J-sM8"/>
+                                </items>
+                            </navigationBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="vZW-dW-aiu">
+                                <rect key="frame" x="374" y="56" width="20" height="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fzc-Cg-WI7" firstAttribute="bottom" secondItem="SGy-Nq-2kZ" secondAttribute="bottom" id="33i-5n-yvM"/>
+                            <constraint firstItem="vZW-dW-aiu" firstAttribute="top" secondItem="drt-Vl-4cJ" secondAttribute="bottom" constant="-32" id="6AB-nX-eO6"/>
+                            <constraint firstItem="fzc-Cg-WI7" firstAttribute="trailing" secondItem="drt-Vl-4cJ" secondAttribute="trailing" id="Aof-Br-VEa"/>
+                            <constraint firstItem="SGy-Nq-2kZ" firstAttribute="top" secondItem="drt-Vl-4cJ" secondAttribute="bottom" id="Bq0-y7-5Bx"/>
+                            <constraint firstItem="qAk-hm-LpQ" firstAttribute="leading" secondItem="fzc-Cg-WI7" secondAttribute="leading" id="FkV-Ag-ndc"/>
+                            <constraint firstItem="qAk-hm-LpQ" firstAttribute="top" secondItem="fzc-Cg-WI7" secondAttribute="top" id="LCv-EK-Z17"/>
+                            <constraint firstItem="vZW-dW-aiu" firstAttribute="leading" secondItem="drt-Vl-4cJ" secondAttribute="trailing" constant="-40" id="ME9-ve-xss"/>
+                            <constraint firstItem="drt-Vl-4cJ" firstAttribute="leading" secondItem="fzc-Cg-WI7" secondAttribute="leading" id="Otn-tW-ml8"/>
+                            <constraint firstItem="drt-Vl-4cJ" firstAttribute="top" secondItem="fzc-Cg-WI7" secondAttribute="top" id="YHN-5R-x7v"/>
+                            <constraint firstItem="fzc-Cg-WI7" firstAttribute="trailing" secondItem="qAk-hm-LpQ" secondAttribute="trailing" id="gA7-mN-7hH"/>
+                            <constraint firstItem="fzc-Cg-WI7" firstAttribute="trailing" secondItem="SGy-Nq-2kZ" secondAttribute="trailing" id="pXI-Oa-Utz"/>
+                            <constraint firstAttribute="bottom" secondItem="qAk-hm-LpQ" secondAttribute="bottom" id="vaP-dx-z17"/>
+                            <constraint firstItem="SGy-Nq-2kZ" firstAttribute="leading" secondItem="fzc-Cg-WI7" secondAttribute="leading" id="yqC-yN-ecg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fzc-Cg-WI7"/>
+                    </view>
+                    <connections>
+                        <outlet property="activity_indicator" destination="vZW-dW-aiu" id="0Lw-fb-IUL"/>
+                        <outlet property="navigationBar" destination="drt-Vl-4cJ" id="JPs-Sq-96C"/>
+                        <outlet property="navigationBarItem" destination="vdh-9J-sM8" id="AUz-SV-SYw"/>
+                        <outlet property="view_container" destination="SGy-Nq-2kZ" id="qbf-5x-iUL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9BQ-OU-PIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>

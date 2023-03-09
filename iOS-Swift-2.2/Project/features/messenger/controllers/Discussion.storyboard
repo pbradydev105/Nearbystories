@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Srz-Ts-7O3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discussion View Controller-->
+        <scene sceneID="K9V-vh-QIc">
+            <objects>
+                <viewController storyboardIdentifier="discussionListVC" id="Srz-Ts-7O3" customClass="DiscussionViewController" customModule="NearbyStores_PRO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E1l-FD-Ese">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-U8-GmD">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-Qw-aCa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="ZtK-kG-cFb"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H4g-Qw-aCa" firstAttribute="top" secondItem="Pc2-fN-Qca" secondAttribute="top" id="0v8-r3-i1V"/>
+                            <constraint firstItem="H4g-Qw-aCa" firstAttribute="leading" secondItem="Pc2-fN-Qca" secondAttribute="leading" id="5Tl-F3-T9C"/>
+                            <constraint firstItem="Pc2-fN-Qca" firstAttribute="trailing" secondItem="fXj-U8-GmD" secondAttribute="trailing" id="FZ8-Kb-L1F"/>
+                            <constraint firstItem="Pc2-fN-Qca" firstAttribute="trailing" secondItem="H4g-Qw-aCa" secondAttribute="trailing" id="mDD-UM-lRL"/>
+                            <constraint firstItem="fXj-U8-GmD" firstAttribute="top" secondItem="H4g-Qw-aCa" secondAttribute="bottom" id="nbg-aP-YxS"/>
+                            <constraint firstItem="fXj-U8-GmD" firstAttribute="leading" secondItem="Pc2-fN-Qca" secondAttribute="leading" id="pkt-HV-Xxc"/>
+                            <constraint firstItem="Pc2-fN-Qca" firstAttribute="bottom" secondItem="fXj-U8-GmD" secondAttribute="bottom" id="zXQ-7f-4in"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pc2-fN-Qca"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="H4g-Qw-aCa" id="ceV-1B-DTL"/>
+                        <outlet property="navigationBarItem" destination="ZtK-kG-cFb" id="Zcb-ZO-9FB"/>
+                        <outlet property="viewContainer" destination="fXj-U8-GmD" id="AMI-ge-9dz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYf-KX-mIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="181.25937031484258"/>
+        </scene>
+    </scenes>
+</document>

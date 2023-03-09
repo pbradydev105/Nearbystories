@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Stores_HCards" customModule="NearbyStores_PRO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGl-bm-u8v">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTE-BT-Dfz">
+                            <rect key="frame" x="355" y="10" width="59" height="30"/>
+                            <state key="normal" title="Show All"/>
+                            <connections>
+                                <action selector="showAllAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="zKQ-vm-YPw"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disocover nearby stores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRQ-zD-SdM" customClass="EdgeLabel" customModule="NearbyStores_PRO" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="184.5" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fEe-Uq-zXE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wTE-BT-Dfz" secondAttribute="trailing" id="3l2-c5-rU1"/>
+                        <constraint firstItem="rRQ-zD-SdM" firstAttribute="leading" secondItem="bGl-bm-u8v" secondAttribute="leading" id="52f-Tr-P4a"/>
+                        <constraint firstItem="wTE-BT-Dfz" firstAttribute="centerY" secondItem="bGl-bm-u8v" secondAttribute="centerY" id="Jbw-Bg-u1Z"/>
+                        <constraint firstItem="wTE-BT-Dfz" firstAttribute="height" secondItem="bGl-bm-u8v" secondAttribute="height" multiplier="0.6" id="epJ-fz-3fx"/>
+                        <constraint firstItem="rRQ-zD-SdM" firstAttribute="centerY" secondItem="bGl-bm-u8v" secondAttribute="centerY" id="fVe-Ub-Am7"/>
+                        <constraint firstAttribute="height" constant="50" id="kl0-HI-Wzo"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9bP-sm-y8u">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lHn-ND-UdL">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9bP-sm-y8u" secondAttribute="trailing" id="8SG-0c-PzF"/>
+                <constraint firstItem="bGl-bm-u8v" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ujc-F7-PCq"/>
+                <constraint firstItem="9bP-sm-y8u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VaT-lJ-Aw2"/>
+                <constraint firstItem="bGl-bm-u8v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="deR-yB-TbF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bGl-bm-u8v" secondAttribute="trailing" id="ofW-j0-zFn"/>
+                <constraint firstItem="9bP-sm-y8u" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wAt-cp-5BM"/>
+                <constraint firstItem="9bP-sm-y8u" firstAttribute="top" secondItem="bGl-bm-u8v" secondAttribute="bottom" id="wdC-7F-HaI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="h_collection" destination="9bP-sm-y8u" id="KXp-1j-LM7"/>
+                <outlet property="h_header" destination="bGl-bm-u8v" id="YYp-eC-r5P"/>
+                <outlet property="h_label" destination="rRQ-zD-SdM" id="Hp8-Ea-ehF"/>
+                <outlet property="h_showAll" destination="wTE-BT-Dfz" id="mbM-76-n6E"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+</document>

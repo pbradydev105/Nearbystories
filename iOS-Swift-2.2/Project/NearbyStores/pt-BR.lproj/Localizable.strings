@@ -1,0 +1,105 @@
+
+/*
+  Localizable.strings
+  NearbyStores
+
+  Created by Amine on 6/3/18.
+  Copyright © 2018 Amine. All rights reserved.
+*/
+
+"Upcoming" = "Próximas";
+"Sign In" = "Assinar em";
+"Event Detail" = "Detalhes do evento";
+"Edit Profile" = "Editar Perfil";
+"Just Now" = "Agora mesmo";
+"less than 1KM" = "menos de 1KM";
+"People around me" = "Pessoas proximas";
+"Nearby Events Notification" = "Notificação de eventos próximos";
+"Receive notification when there is a store near you" = "Receber notificação quando houver uma loja perto de você";
+"Enter email address" = "Insira o endereço de e-mail";
+"Receive notification when there is a event coming" = "Receber notificação quando houver um evento chegando";
+"Don't have account?" = "Não tem conta?";
+"Pick Photo" = "Escolha uma foto";
+"Reload" = "Recarregar";
+"Offers notification" = "Notificação de ofertas";
+"Categories" = "Categorias";
+"Version" = "Versão";
+"About us" = "Sobre nós";
+"Messenger notifications" = "Notificações do Messenger";
+"Thank for your review!" = "Obrigado pelo seu comentário!";
+"offers" = "ofertas";
+"offer" = "oferta";
+"Write Name, Address, City ..." = "Escrever nome, endereço, cidade ...";
+"Send Message" = "Enviar mensagem";
+"Reviews" = "Comentários";
+"Show More Offers" = "Mostrar mais ofertas";
+"Write Review..." = "Escreva um cometário";
+"Enter password" = "Insira sua senha";
+"Search on" = "Pesquisar em";
+"stores" = "Negócios";
+"Offer Detail" = "Detalhes da oferta";
+"Enter message ..." = "Insira sua mensagem...";
+"Store detail" = "Detalhes do negócio";
+"Close" = "Fechar";
+"Events" = "Eventos";
+"No Feed Yet" = "No Feed Yet";
+"Coming event notification" = "Notificação de evento";
+"Enter login" = "Insira seu CIM";
+"Chat login" = "Login";
+"Terms of use" = "Termos de uso";
+"Application Version" = "Versão do aplicativo";
+"Rate Now" = "Avalie agora";
+"Send" = "Enviar";
+"My Events" = "Me eventos";
+"Log out" = "Log out";
+"My Favourite Stores" = "Meus favoritos";
+"Featured" = "Destaque";
+"Find people around you" = "Encontre pessoas ao seu redor";
+"Messenger" = "Messenger";
+"Forgot password?" = "Esqueceu a senha?";
+"Enter message..." = "Digite sua messagem...";
+"Receive a special offer notification" = "Receba uma notificação de oferta especial";
+"Receive notification when there is new messages" = "Receber notificação quando houver novas mensagens";
+"Try a refresh the page" = "Nenhum resultado encontrado!";
+"Store Detail" = "Detalhes do negócio";
+"Geo Stores" = "Empresas proximas";
+"%d stores" = "%d negócios";
+"Pseudo" = "Insira seu CIM";
+"Add Review" = "Adicione um cometário";
+"Sent message" = "Mensagem enviada";
+"My interesting events" = "Meus eventos";
+"Manage your business" = "Gerencie seus negócios";
+"Privacy Policy" = "Politica de privacidade";
+"Offers" = "Ofertas";
+"Nearby stores notifications" = "Notificações de empresas próximas";
+"KM" = "KM";
+"M" = "M";
+"Favourites" = "Contratar Marketing";
+"Setting" = "Configuração";
+"Loading..." = "Carregando...";
+"Couldn't load data from server" = "Não foi possível carregar os dados do servidor";
+"Enter full name" = "Digite o nome completo";
+"Search" = "Pesquisar";
+"OR" = "OU";
+"Block" = "Bloquear";
+
+//ADDED BY DEV
+"_Search" = "Pesquisar";
+"Home" = "Home";
+"You have %@ messages" = "Você tem %@ messagens";
+"Radius" = "Radius";
+"Save Changes" = "Savar mudanças";
+"Sign Up" = "Inscrever - se";
+
+"Already Have an account?" = "á tem uma conta?";
+"%@ - Only on %@ \n %@" = "%@ - Apenas em %@ \n %@";
+
+"End at" = "Termina em";
+"Promotion" = "Promoção";
+
+
+"%@% OFF" = "%@% OFF";
+"Offer for %@" = "Oferta por %@";
+
+"Enter phone" = "DDD + Numéro de celular";
+"Phone field is empty" = "O campo do telefone está vazio";

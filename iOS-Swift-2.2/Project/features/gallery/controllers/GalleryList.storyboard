@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8nw-r0-Sm6">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gallery View Controller-->
+        <scene sceneID="j2L-Hr-kbT">
+            <objects>
+                <viewController storyboardIdentifier="galleryVC" id="8nw-r0-Sm6" customClass="GalleryViewController" customModule="NearbyStores_PRO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kUo-W2-QtN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJM-qt-msm">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Plk-jL-ukn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="8y7-s7-1wC"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hJM-qt-msm" secondAttribute="bottom" id="NFi-H6-f4H"/>
+                            <constraint firstItem="1Ed-h3-lKs" firstAttribute="trailing" secondItem="Plk-jL-ukn" secondAttribute="trailing" id="TSr-yz-tI6"/>
+                            <constraint firstItem="Plk-jL-ukn" firstAttribute="leading" secondItem="1Ed-h3-lKs" secondAttribute="leading" id="eVi-Oc-a3b"/>
+                            <constraint firstItem="1Ed-h3-lKs" firstAttribute="trailing" secondItem="hJM-qt-msm" secondAttribute="trailing" id="m25-Dk-i0O"/>
+                            <constraint firstItem="hJM-qt-msm" firstAttribute="top" secondItem="Plk-jL-ukn" secondAttribute="bottom" id="ogz-QA-PdU"/>
+                            <constraint firstItem="hJM-qt-msm" firstAttribute="leading" secondItem="1Ed-h3-lKs" secondAttribute="leading" id="pde-yq-KEq"/>
+                            <constraint firstItem="Plk-jL-ukn" firstAttribute="top" secondItem="1Ed-h3-lKs" secondAttribute="top" id="scb-VL-1Gg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Ed-h3-lKs"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainContainer" destination="hJM-qt-msm" id="RFb-oy-mCF"/>
+                        <outlet property="navigationBar" destination="Plk-jL-ukn" id="Rx5-TC-lLb"/>
+                        <outlet property="navigationBarItem" destination="8y7-s7-1wC" id="goS-bB-jdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hc2-hE-3b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="110"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OfferCardCell" customModule="NearbyStores_PRO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="558" height="395"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="558" height="395"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-ua-Jv3">
+                        <rect key="frame" x="0.0" y="44" width="558" height="317"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-72-jep">
+                                <rect key="frame" x="0.0" y="0.0" width="558" height="263"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_test" translatesAutoresizingMaskIntoConstraints="NO" id="1sQ-BT-Ze4">
+                                        <rect key="frame" x="0.0" y="0.0" width="558" height="263"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="263" id="P4O-UG-vI7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evh-8c-Bn2" customClass="EdgeLabel" customModule="NearbyStores_PRO" customModuleProvider="target">
+                                        <rect key="frame" x="512.5" y="3" width="42.5" height="20.5"/>
+                                        <color key="backgroundColor" red="0.8678149288" green="0.047599144879999999" blue="0.1276419392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnq-bi-fFI" customClass="EdgeLabel" customModule="NearbyStores_PRO" customModuleProvider="target">
+                                        <rect key="frame" x="3" y="3" width="68.5" height="20.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Evh-8c-Bn2" firstAttribute="top" secondItem="EGj-72-jep" secondAttribute="top" constant="3" id="4Ub-wW-fQb"/>
+                                    <constraint firstItem="1sQ-BT-Ze4" firstAttribute="leading" secondItem="EGj-72-jep" secondAttribute="leading" id="855-dw-YmF"/>
+                                    <constraint firstItem="vnq-bi-fFI" firstAttribute="top" secondItem="EGj-72-jep" secondAttribute="top" constant="3" id="966-Mj-Ve5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Evh-8c-Bn2" secondAttribute="trailing" constant="3" id="SkX-gf-ZlK"/>
+                                    <constraint firstItem="vnq-bi-fFI" firstAttribute="leading" secondItem="EGj-72-jep" secondAttribute="leading" constant="3" id="TNP-wg-8mq"/>
+                                    <constraint firstAttribute="bottom" secondItem="1sQ-BT-Ze4" secondAttribute="bottom" id="hda-D7-Tvc"/>
+                                    <constraint firstAttribute="trailing" secondItem="1sQ-BT-Ze4" secondAttribute="trailing" id="xJ4-4n-1gD"/>
+                                    <constraint firstItem="1sQ-BT-Ze4" firstAttribute="top" secondItem="EGj-72-jep" secondAttribute="top" id="yxk-3H-6VU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yA-JO-Rfd">
+                                <rect key="frame" x="0.0" y="263" width="558" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="FfD-GB-IV4">
+                                        <rect key="frame" x="0.0" y="10" width="558" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Offer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWI-c1-gmy">
+                                                <rect key="frame" x="0.0" y="0.0" width="558" height="19"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10$ - Get 1 &amp; 2 for free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtY-cl-E0D">
+                                                <rect key="frame" x="0.0" y="21" width="558" height="19"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="GVK-gd-Kkv"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FfD-GB-IV4" firstAttribute="top" secondItem="6yA-JO-Rfd" secondAttribute="top" constant="10" id="VhT-gf-VCH"/>
+                                    <constraint firstItem="FfD-GB-IV4" firstAttribute="leading" secondItem="6yA-JO-Rfd" secondAttribute="leading" id="mGM-Fl-wmW"/>
+                                    <constraint firstAttribute="trailing" secondItem="FfD-GB-IV4" secondAttribute="trailing" id="tzp-K9-Mcv"/>
+                                    <constraint firstAttribute="bottom" secondItem="FfD-GB-IV4" secondAttribute="bottom" constant="4" id="yOS-PL-HmI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6yA-JO-Rfd" secondAttribute="trailing" id="EWA-aW-rFH"/>
+                            <constraint firstAttribute="trailing" secondItem="EGj-72-jep" secondAttribute="trailing" id="G77-xI-K8F"/>
+                            <constraint firstItem="EGj-72-jep" firstAttribute="leading" secondItem="EAq-ua-Jv3" secondAttribute="leading" id="dxQ-iV-AWa"/>
+                            <constraint firstItem="EGj-72-jep" firstAttribute="top" secondItem="EAq-ua-Jv3" secondAttribute="top" id="hCe-Mw-nL0"/>
+                            <constraint firstItem="6yA-JO-Rfd" firstAttribute="top" secondItem="EGj-72-jep" secondAttribute="bottom" id="mVy-W1-VhJ"/>
+                            <constraint firstItem="6yA-JO-Rfd" firstAttribute="leading" secondItem="EAq-ua-Jv3" secondAttribute="leading" id="rLg-9u-8qU"/>
+                            <constraint firstAttribute="bottom" secondItem="6yA-JO-Rfd" secondAttribute="bottom" id="vw3-9A-3G7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="EAq-ua-Jv3" secondAttribute="trailing" id="HrR-3f-IeB"/>
+                <constraint firstItem="EAq-ua-Jv3" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="SQn-dh-seq"/>
+                <constraint firstItem="EAq-ua-Jv3" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="ZSQ-gn-cV5"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="EAq-ua-Jv3" secondAttribute="top" id="gwG-Gi-NHz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="558" height="395"/>
+            <connections>
+                <outlet property="detail" destination="CtY-cl-E0D" id="pGn-5M-nr3"/>
+                <outlet property="featured" destination="vnq-bi-fFI" id="BrF-4w-Des"/>
+                <outlet property="image" destination="1sQ-BT-Ze4" id="2Pc-HB-Kbx"/>
+                <outlet property="imageConstraintHeight" destination="P4O-UG-vI7" id="tPy-ta-1sp"/>
+                <outlet property="imageContainer" destination="EGj-72-jep" id="J6c-9Z-RCb"/>
+                <outlet property="infoConstraintHeight" destination="GVK-gd-Kkv" id="Lzd-Sb-Q0z"/>
+                <outlet property="name" destination="dWI-c1-gmy" id="63d-7m-vSt"/>
+                <outlet property="sale" destination="Evh-8c-Bn2" id="d46-dB-Wai"/>
+            </connections>
+            <point key="canvasLocation" x="81.159420289855078" y="243.41517857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image_test" width="425" height="306"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Vk-FU-LNS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reviews List View Controller-->
+        <scene sceneID="reX-aS-muR">
+            <objects>
+                <viewController storyboardIdentifier="reviewsListVC" id="5Vk-FU-LNS" customClass="ReviewsListViewController" customModule="NearbyStores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zk6-zO-HXD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tg-Lp-p4C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xpk-5U-dpu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Xpk-5U-dpu" secondAttribute="trailing" id="Bz1-RP-REk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xpk-5U-dpu" secondAttribute="bottom" id="MaK-gR-Pj8"/>
+                                    <constraint firstItem="Xpk-5U-dpu" firstAttribute="leading" secondItem="9tg-Lp-p4C" secondAttribute="leading" id="YO2-vl-V3d"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krD-hD-eIL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="OFD-Cn-Q2g"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AmO-Kc-ZuF" firstAttribute="trailing" secondItem="krD-hD-eIL" secondAttribute="trailing" id="A9n-ae-9eU"/>
+                            <constraint firstItem="9tg-Lp-p4C" firstAttribute="leading" secondItem="AmO-Kc-ZuF" secondAttribute="leading" id="Jk9-Ma-uBx"/>
+                            <constraint firstItem="Xpk-5U-dpu" firstAttribute="top" secondItem="krD-hD-eIL" secondAttribute="bottom" id="KIM-Ll-ALU"/>
+                            <constraint firstItem="9tg-Lp-p4C" firstAttribute="top" secondItem="krD-hD-eIL" secondAttribute="bottom" id="LO2-vW-ZEn"/>
+                            <constraint firstItem="AmO-Kc-ZuF" firstAttribute="bottom" secondItem="9tg-Lp-p4C" secondAttribute="bottom" id="OUq-5L-FfG"/>
+                            <constraint firstItem="krD-hD-eIL" firstAttribute="leading" secondItem="AmO-Kc-ZuF" secondAttribute="leading" id="Smt-Nf-ODs"/>
+                            <constraint firstItem="krD-hD-eIL" firstAttribute="top" secondItem="AmO-Kc-ZuF" secondAttribute="top" id="Yib-CT-IDD"/>
+                            <constraint firstItem="AmO-Kc-ZuF" firstAttribute="trailing" secondItem="9tg-Lp-p4C" secondAttribute="trailing" id="ygd-JL-dXb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AmO-Kc-ZuF"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="krD-hD-eIL" id="jlE-JH-DFY"/>
+                        <outlet property="navigationBarItem" destination="OFD-Cn-Q2g" id="Ia0-4v-zzZ"/>
+                        <outlet property="tableView" destination="Xpk-5U-dpu" id="mod-8z-koo"/>
+                        <outlet property="viewContainer" destination="9tg-Lp-p4C" id="cPz-qB-ald"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTU-7P-TtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.200000000000003" y="141.67916041979012"/>
+        </scene>
+    </scenes>
+</document>
